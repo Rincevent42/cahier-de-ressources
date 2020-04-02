@@ -66,6 +66,7 @@ $ echo "Je suis moisi" > vieuxtacos.txt
 
 - `cat`: Afficher le contenu d’un fichier texte en intégralité
 - `wc` : Compter les lignes, les mots et les caractères
+
 ```shell
 $ wc -l languages.txt
 50
@@ -121,7 +122,7 @@ Fichier Prenoms.csv avec utilisateur;genre;nationalité:
     aaren;m,f;english;0
     aarne;m;finnish;0
     
- Compter le nombre de prénoms féminins et finlandais, voici ce qu'on écrira :
+ Compter le nombre de prénoms féminins avec la nationalité françaises, voici ce qu'on écrira :
 ```shell
  $ grep "f;french" <  Prenoms.csv |  wc -l
  ```
@@ -145,7 +146,7 @@ Créer un fichier javascript_biarritz_toulouse.csv contenant uniquement les wild
 Indice : tu peux avoir besoin de créer des fichiers "intermédiaires", et de les concaténer.
 
 ```shell
- $  	grep Toulouse wilders.csv > toulouse.csv  
+ $  grep Toulouse wilders.csv > toulouse.csv  
  $	grep JavaScript toulouse.csv > javascript_biarritz_toulouse.csv
  $	grep Biarritz wilders.csv > biarritz.csv
  $	grep JavaScript biarritz.csv >> javascript_biarritz_toulouse.csv
